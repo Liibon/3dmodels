@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+      - ./tools:/app/tools
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+    command: npm start
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+      - ./tools:/app/tools
+    command: npm test
+
+networks:
+  default:
+    driver: bridge

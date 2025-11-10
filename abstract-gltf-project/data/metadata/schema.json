@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Abstract Model Metadata",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the model"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the model"
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description of the model"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp of when the model was created"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp of the last update to the model"
+    },
+    "presets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of presets applied to the model"
+    },
+    "attributes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Key-value pairs representing model attributes"
+    }
+  },
+  "required": ["id", "name", "created_at"],
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+{
+  "name": "abstract-gltf-project",
+  "version": "1.0.0",
+  "description": "A project for generating abstract 3D models and exporting them to GLTF format.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "3D",
+    "models",
+    "GLTF",
+    "abstract"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.132.2",
+    "glTF-Exporter": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "jest": "^27.0.6",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.7"
+  }
+}

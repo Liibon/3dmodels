@@ -1,0 +1,40 @@
+{
+  "presets": [
+    {
+      "name": "Preset 1",
+      "parameters": {
+        "color": "#FF5733",
+        "size": 1.5,
+        "complexity": 5,
+        "shape": "organic"
+      }
+    },
+    {
+      "name": "Preset 2",
+      "parameters": {
+        "color": "#33FF57",
+        "size": 2.0,
+        "complexity": 3,
+        "shape": "geometric"
+      }
+    },
+    {
+      "name": "Preset 3",
+      "parameters": {
+        "color": "#3357FF",
+        "size": 1.0,
+        "complexity": 4,
+        "shape": "abstract"
+      }
+    },
+    {
+      "name": "Preset 4",
+      "parameters": {
+        "color": "#F1C40F",
+        "size": 2.5,
+        "complexity": 6,
+        "shape": "fluid"
+      }
+    }
+  ]
+}
